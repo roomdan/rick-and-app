@@ -1,0 +1,324 @@
+body::-webkit-scrollbar{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #313131;
+  border-radius: 1rem;
+  border: 1px white solid;
+
+}
+
+a{ 
+text-decoration: none;
+color: #313131;
+}
+
+h1 {
+  text-align: center;
+}
+
+.pp-header-menu{
+width: 100%;
+border-bottom: solid rgb(240, 240, 240);
+}
+
+#navigation-menu{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.log-navigation-menu {
+
+box-sizing: border-box;
+width: 3rem;
+margin: 0.2rem;
+margin-left: 1rem;
+
+}
+
+.list-menu-options{
+  display: flex;
+  margin-right: 2rem;
+}
+
+li {
+  list-style: none;
+  margin-left: 1.2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #313131;
+}
+
+.pp-Help-btn{
+
+background-color:transparent;
+padding: 3px;
+width: 5rem;
+border: none;
+outline: none;
+font-weight: 600;
+font-size: 1.3rem;
+color: #313131;
+}
+
+.pp-Theme{
+outline: none;
+font-weight: 600;
+font-size: 1.2rem;
+color: #313131;
+outline: none;
+border: none;
+padding: 0;
+}
+
+.pp-Theme option {
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.First-Section-Title {
+
+width: 100%;
+min-height: 20rem;
+color: #313131;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: transparent;
+background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rick-morty-mr-poopy-butthole-1574420984.jpg);
+background-position:top center;
+background-size: cover;
+}
+
+.filter-first-section-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.644);
+  width: 100%;
+  min-height: 20rem;
+}
+
+.title-first-section {
+
+  width: 100%;
+  min-height: 5rem;
+  max-height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.svg-first-section {
+width: 100%;
+min-height: 10rem;
+max-height: auto;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+
+.button-start-app {
+width: 90px;
+height: 90px;
+margin-top: 30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .button-start-app:hover {
+    animation: App-logo-spin 1s linear;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.content-info-app {
+
+  width: 100%;
+  min-height: 100vh ;
+  max-height: auto;
+  background-image: linear-gradient(1deg, rgb(13, 18, 32), rgb(36, 43, 58));
+  display: flex;
+  flex-direction: column;
+  color: white; 
+}
+
+
+.content-characters {
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;  
+}
+
+/* Characters */
+
+.box-character {
+
+  width: 45%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  margin: 1rem;
+  color: #313131;
+
+}
+
+@media screen and (max-width: 920px) {
+  .box-character {
+    width: 100%;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.918);
+    display: flex;
+    margin: 1rem;
+  
+  }
+  
+}
+
+.image-box-character {
+
+width: 40%;
+height: 15rem;
+background-color: rgba(0, 0, 0, 0.411);
+box-sizing: border-box;
+
+}
+
+.character-info {
+  width: 60% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-box-character img {
+
+  width: 100%;
+  height: 15rem;
+
+}
+
+.name {
+  width: 100%;
+  background-color: rgb(85, 85, 85);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fdb008;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.status-character{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.status-ligth{
+  width: 1rem;
+  height: 1rem;
+  border-color: none;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  animation: status 10s infinite;
+}
+
+@keyframes status {
+0%{  
+  background-color: rgb(108, 255, 120);
+}
+
+20%{  
+  background-color: rgb(3, 151, 11);
+}
+
+40%{  
+  background-color: rgb(74, 153, 28);
+}
+
+60%{  
+  background-color: rgb(116, 196, 113);
+}
+
+80%{  
+  background-color: rgb(143, 207, 39);
+}
+
+100%{  
+  background-color: rgb(108, 255, 120);
+}
+
+}
+
+
+
+
+.status-text{
+  font-size: 1.5rem;
+  font-weight:600;
+}
+
+.location-info-character{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-character {
+
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  color: #00000073;
+  font-weight: 700;
+
+}
+
+.subtitle-character{
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.btn-show-espisodes {
+
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(204, 204, 204);
+
+}
+
+.episodes-btn{
+
+  background-color: #a2e969;
+  border-radius: 0.5rem;
+  outline: none;
+  border:none;
+  color: #313131;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.3rem
+}

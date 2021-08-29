@@ -1,6 +1,5 @@
 import logo2 from './logo2.svg';
 import { useForm } from "react-hook-form"
-import { Link } from 'react-router-dom';
 
 export const HeaderMenu = ({changeTheme})=>{
 
@@ -22,9 +21,7 @@ export const HeaderMenu = ({changeTheme})=>{
 return(
     <div id='navigation-menu'>
         <div className='log-navigation-menu'>
-            <Link to='/'>
                 <img src={logo2} className="logo-rick" alt="logo"/>
-            </Link>
         </div> 
             <nav className='nav-page'>
                 <ul className='list-menu-options'>
@@ -40,7 +37,7 @@ return(
                         </form>
                     </li>
                     <li className='pp-More'>
-                            <Link to='/More'>More</Link>
+                          <a href='/#'>More</a>
                     </li>
                 </ul>
             </nav>

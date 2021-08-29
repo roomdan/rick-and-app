@@ -6,7 +6,6 @@ export const FirstSection = ({ filter })=>{
 
     const [value, setValue] = useState("Earth (C-137)");
     const [locations, setLocations] = useState('');
-    const [start, setStart] = useState({display:'none'})
 
     useEffect(
         ()=>{
@@ -36,9 +35,9 @@ export const FirstSection = ({ filter })=>{
                     <h1>WELCOME TO RICK AND MORTY APP</h1>
                 </div>
                 <div className='svg-first-section'>
-                    <img src={startApp} alt='logo' className='button-start-app' onClick={()=>{console.log('ohoa');}} />
+                    <img src={startApp} alt='logo' className='button-start-app' onClick={()=>{console.log('on click');}} />
                 </div>
-                <div style={start} className='form-edit-and-consult'>
+                <div className='form-edit-and-consult'>
                     <select value={value} onChange={(e)=>{selectEjec(e)}}>
                         {options}
                     </select>
